@@ -5,6 +5,7 @@
     <title>Chimica</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="spazioStyle.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -49,14 +50,62 @@
     <div class="media">
         <img class="mr-3" src="spaziotempo.jpg" alt="Generic placeholder image">
         <div class="media-body">
-          <h5 class="mt-0">Le increspature nello spaziotempo potrebbero indicare wormhole?</h5>
+            <h5 class="mt-0">Le increspature nello spaziotempo potrebbero indicare wormhole?</h5>
+            I rilevatori di onde gravitazionali hanno già individuato misteriosi buchi neri . Ma quello che scoprono
+            dopo potrebbe essere ancora più strano: wormhole .
+            I fisici sospettano da tempo che potrebbero esistere wormhole. Se esistono wormhole, dall'esterno potrebbero
+            sembrare simili ai buchi neri. Ma un oggetto che cade in un buco nero rimarrebbe intrappolato al suo
+            interno. Al contrario, tutto ciò che cade in un wormhole dovrebbe essere in grado di passare dall'altra
+            parte.
+            La forza che sperimentiamo come gravità risulta effettivamente dalla curvatura dello spaziotempo.
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm">
+            <span id="commentDone"></span>
+            <div class="tab-pane" id="add-comment">
+                <form action="#" method="post" class="form-horizontal" id="commentForm">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Commenta</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" name="addComment" id="addComment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="button" class="btn btn-outline-primary btn-circle text-uppercase" id="submitComment"><span
+                                    class="glyphicon glyphicon-send"></span> Invia</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
         </div>
       </div>
-    <footer>
-        <a href="contatti.html">
-            <button type="button" class="btn btn-light">Contattaci</button>
-        </a>
-    </footer>
+        <footer>
+            <a href="contatti.html">
+                <button type="button" class="btn btn-light">Contattaci</button>
+            </a>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script>
+            $("#submitComment").click(function () {
+                var comment = $("#addComment").val();
+                $("#commentDone").html(
+                    ' <div class="card"><div class="card-body" >' + comment + '</div></div>'
+                );
+            })
+        </script>
 </body>
 
 </html>
