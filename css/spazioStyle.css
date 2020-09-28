@@ -11,8 +11,8 @@
     color: seashell;
 }
 
-.media{
-    margin: 5%;
+.row{
+    margin-top: 5%;
 }
 
 h3{
@@ -26,11 +26,19 @@ h3{
 }
 
 .col-sm-3{
-    float: inline-start;
     color: seashell;
 
 }
 
-.col-sm-3 :hover{
+#like :hover{
     color: #a3ccdb;
+}
+
+#opinion{
+    margin-top: 25%;
+}
+
+.cointener-commentDone{
+    max-width: 80%;
+    margin-left: 1.9%;
 }
