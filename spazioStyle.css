@@ -12,5 +12,25 @@
 }
 
 .media{
+    margin: 5%;
+}
+
+h3{
+    color: seashell;
     margin-bottom: 5%;
+}
+
+#like{
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.col-sm-3{
+    float: inline-start;
+    color: seashell;
+
+}
+
+.col-sm-3 :hover{
+    color: #a3ccdb;
 }

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Chimica</title>
+    <title>Spazio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="spazioStyle.css">
@@ -12,7 +12,7 @@
 
 <body>
     <header class="title">
-        <h1>The science post</h1>
+        <h1 class="display-2">The science post</h1>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -62,10 +62,13 @@
     </div>
     <div class="container">
         <div class="row">
-          <div class="col-sm-3"></div>
+          <div class="col-sm-3">
+              <a href="#"><img id="like" src="heart.png">Like</a>
+          </div>
           <div class="col-sm">
+            <h3>Commenti:</h3>
             <span id="commentDone"></span>
-            <div class="tab-pane" id="add-comment">
+            <div class="tab-pane">
                 <form action="#" method="post" class="form-horizontal" id="commentForm">
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Commenta</label>
