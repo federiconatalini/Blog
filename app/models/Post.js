@@ -1,19 +1,8 @@
 class Post {
-    constructor(title, text, pubblico) {
+    constructor(title, body, pubblico, featured) {
         this.title = title;
-        this.text = text;
+        this.body = body;
         this.pubblico = pubblico;
+        this.featured=featured;
     }
-
-    getTitle() { return this.title; }
-
-    setTitle(title) { this.title = title; }
-
-    getText() { return this.text; }
-
-    setText(text) { this.text = text; }
-
-    getPublic() { return this.public; }
-
-    setPublic(pubblico) { this.pubblico = pubblico; }
 }
